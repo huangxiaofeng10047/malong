@@ -1,0 +1,351 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<link rel="dns-prefetch" href="http://apps.bdimg.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="码农场">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>码农场-自然语言处理、机器学习算法</title>
+<link rel="dns-prefetch" href="http://apps.bdimg.com/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+		<script async="" src="./resources/js/analytics.js"></script><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.hankcs.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./resources/js/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="_bootstrap-css" href="./resources/css/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="_fontawesome-css" href="./resources/css/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="_main-css" href="./resources/css/main.css" type="text/css" media="all">
+        <script type="text/javascript">
+            var duoshuoQuery = {"short_name":"hankcs","sso":{"login":"http:\/\/www.hankcs.com\/wp-login.php?action=duoshuo_login","logout":"http:\/\/www.hankcs.com\/wp-login.php?action=logout&_wpnonce=93100cf696"},"theme":"default","stylePatch":"wordpress\/DUX"};
+            duoshuoQuery.sso.login += '&redirect_to=' + encodeURIComponent(window.location.href);
+            duoshuoQuery.sso.logout += '&redirect_to=' + encodeURIComponent(window.location.href);
+        </script>
+                <script type="text/javascript" src="./resources/js/embed.js" charset="UTF-8" async="async"></script>
+    <script type="text/javascript" src="./resources/js/jquery.min.js"></script>
+<link rel="https://api.w.org/" href="http://www.hankcs.com/wp-json/">
+<meta name="keywords" content="自然语言处理,机器学习算法,Natural Language Processing,NLP,Machine Learning">
+<meta name="description" content="专注自然语言处理、机器学习算法">
+<link rel="shortcut icon" href="http://www.hankcs.com/favicon.ico">
+<!--[if lt IE 9]><script src="http://www.hankcs.com/wp-content/themes/dux/js/libs/html5.min.js"></script><![endif]-->
+<!--
+	generated 6260 seconds ago
+	generated in 0.309 seconds
+	served from batcache in 0.003 seconds
+	expires in 80140 seconds
+-->
+<link type="text/css" rel="stylesheet" href="./resources/css/embed.default.css"><script async="" data-requirecontext="_" data-requiremodule="main" src="./resources/js/main.js"></script><script async="" data-requirecontext="_" data-requiremodule="hammer" src="./resources/js/hammer.min.js"></script><script async="" data-requirecontext="_" data-requiremodule="ias" src="./resources/js/ias.min.js"></script><script async="" data-requirecontext="_" data-requiremodule="signpop" src="./resources/js/signpop.js"></script><style type="text/css">#ds-thread .ds-powered-by {display: none;}
+ 
+#ds-recent-comments {margin: 0px 10px;}
+</style><script async="" data-requirecontext="_" data-requiremodule="lazyload" src="./resources/js/lazyload.min.js"></script></head>
+<body class="home blog site-layout-2">
+<header class="header">
+	<div class="container">
+		<h1 class="logo"><a href="./resources/js/码农场-自然语言处理、机器学习算法.html" title="码农场-自然语言处理、机器学习算法"><img src="./resources/images/logo.png">码农场</a></h1>		<a href="./resources/js/码农场-自然语言处理、机器学习算法.html" title="码农场-自然语言处理、机器学习算法" class="brand">放牧代码和思想
+<br>专注自然语言处理、机器学习算法</a>		<ul class="site-nav site-navbar">
+			<li id="menu-item-1834" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1834"><a href="http://www.hankcs.com/program/cpp/">C++</a></li>
+<li id="menu-item-1835" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1835"><a href="http://www.hankcs.com/program/java/">Java</a></li>
+<li id="menu-item-5754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5754"><a href="http://www.hankcs.com/ml/">机器学习</a></li>
+<li id="menu-item-2954" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2954"><a href="http://www.hankcs.com/nlp/">NLP</a>
+<ul class="sub-menu">
+	<li id="menu-item-4344" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4344"><a href="http://www.hankcs.com/nlp/corpus/">语料库</a></li>
+	<li id="menu-item-4342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4342"><a href="http://www.hankcs.com/nlp/segment/">中文分词</a></li>
+	<li id="menu-item-4343" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4343"><a href="http://www.hankcs.com/nlp/ner/">命名实体识别</a></li>
+	<li id="menu-item-4479" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4479"><a href="http://www.hankcs.com/nlp/parsing/">句法分析</a></li>
+</ul>
+</li>
+<li id="menu-item-1837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1837"><a href="http://www.hankcs.com/program/algorithm/">算法</a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1839"><a href="http://www.hankcs.com/software/">软件</a></li>
+<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1838"><a href="http://www.hankcs.com/nihongonote/">日语</a>
+<ul class="sub-menu">
+	<li id="menu-item-1860" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1860"><a href="http://www.hankcs.com/nihongonote/riyurimen/">日语入门</a></li>
+	<li id="menu-item-1861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1861"><a href="http://www.hankcs.com/nihongonote/listening/">日语听力</a></li>
+	<li id="menu-item-1863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1863"><a href="http://www.hankcs.com/nihongonote/tekusuto/">日语综合教程</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2190"><a href="http://www.hankcs.com/nihongonote/tekusuto/disance/">第三册</a></li>
+		<li id="menu-item-2192" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2192"><a href="http://www.hankcs.com/nihongonote/tekusuto/daiyonnsatu/">第四册</a></li>
+		<li id="menu-item-2191" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2191"><a href="http://www.hankcs.com/nihongonote/tekusuto/5/">第五册</a></li>
+		<li id="menu-item-2702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2702"><a href="http://www.hankcs.com/nihongonote/tekusuto/%e7%ac%ac%e5%85%ad%e5%86%8c/">第六册</a></li>
+		<li id="menu-item-3604" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3604"><a href="http://www.hankcs.com/nihongonote/tekusuto/%e7%ac%ac%e4%b8%83%e5%86%8c/">第七册</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1859" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1859"><a href="http://www.hankcs.com/nihongonote/fd2/">新编日语阅读文选</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2187" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2187"><a href="http://www.hankcs.com/nihongonote/fd2/c1/">第一册</a></li>
+		<li id="menu-item-2189" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2189"><a href="http://www.hankcs.com/nihongonote/fd2/c2/">第二册</a></li>
+		<li id="menu-item-2188" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2188"><a href="http://www.hankcs.com/nihongonote/fd2/c3/">第三册</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1858" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1858"><a href="http://www.hankcs.com/nihongonote/jpkaiwa/">日语商务贸易会话</a></li>
+</ul>
+</li>
+<li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="http://www.hankcs.com/about/">关于</a></li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>
+		<div class="topbar">
+			<ul class="site-nav topmenu">
+				<li id="menu-item-5755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5755"><a href="http://www.hankcs.com/about/#comments"><i class="fa fa-comment"></i> 留言板</a></li>
+				<li><a target="_blank" rel="external nofollow" href="https://github.com/hankcs"><i class="fa fa-github-alt"></i> GitHub</a></li>                                <li><a target="_blank" rel="external nofollow" href="http://weibo.com/hankcs"><i class="fa fa-weibo"></i> 微博</a></li>                                <li><a target="_blank" rel="external nofollow" href="https://twitter.com/hankcs"><i class="fa fa-twitter"></i> Twitter</a></li>                                <li><a target="_blank" href="http://www.hankcs.com/feed"><i class="fa fa-rss"></i> RSS订阅</a></li>			</ul>
+							&nbsp; &nbsp; <i class="fa fa-bullhorn url"></i> 恕不接待索要源码语料者、索求技术方案者、以及不Google的懒人。					</div>
+		<i class="fa fa-bars m-icon-nav"></i>
+	</div>
+</header>
+<div class="site-search">
+	<div class="container">
+		<form method="get" class="site-search-form" action="./demo.html"><input class="search-input" name="s" type="text" placeholder="输入关键字" value=""><button class="search-btn" type="submit"><i class="fa fa-search"></i></button></form>	</div>
+</div>	<section class="container">
+		<div class="content-wrap">
+			<div class="content">
+				<div id="focusslide" class="carousel slide" data-ride="carousel" style="touch-action: pan-y; -webkit-user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><ol class="carousel-indicators"><li data-target="#focusslide" data-slide-to="0" class=""></li><li data-target="#focusslide" data-slide-to="1" class=""></li><li data-target="#focusslide" data-slide-to="2" class=""></li><li data-target="#focusslide" data-slide-to="3" class=""></li><li data-target="#focusslide" data-slide-to="4" class="active"></li></ol><div class="carousel-inner" role="listbox"><div class="item"><a target="_blank" href="http://www.hankcs.com/nlp/"><img src="./resources/images/6cbb8645gw1evqam780n1j20ms05kdh0.jpg"></a></div><div class="item"><a target="_blank" href="http://www.hankcs.com/program/algorithm/"><img src="./resources/images/6cbb8645gw1evqamigrzdj20ms05k75g.jpg"></a></div><div class="item"><a target="_blank" href="http://www.hankcs.com/nlp/hanlp.html"><img src="./resources/images/6cbb8645gw1evqan3tt2zj20ms05kjwb.jpg"></a></div><div class="item"><a target="_blank" href="http://www.hankcs.com/nlp/the-entry-natural-language-processing.html"><img src="./resources/images/6cbb8645gw1evqarxn05wj20ms05k75w.jpg"></a></div><div class="item active"><a target="_blank" href="http://www.hankcs.com/ml/"><img src="./resources/images/6cbb8645gw1evqanx46duj20ms05kmz9.jpg"></a></div></div><a class="left carousel-control" href="http://www.hankcs.com/#focusslide" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a><a class="right carousel-control" href="http://www.hankcs.com/#focusslide" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a></div><div class="sticky">
+	<ul>
+	<li class="item"><a href="http://www.hankcs.com/nlp/hanlp.html"><img src="./resources/images/6cbb8645jw1eqkariq2ijj20se0sik3a.jpg" class="thumb" alt="HanLP自然语言处理包开源" title="HanLP自然语言处理包开源"><h3><b>HanLP自然语言处理包开源</b></h3><p class="muted">支持中文分词（N-最短路分词、CRF分词、索引分词、用户自定义词典、词性标注），命名实体识别（中...</p></a></li><li class="item"><a href="http://www.hankcs.com/program/algorithm/aho-corasick-double-array-trie.html"><img src="./resources/images/6cbb8645jw1enk145h6pvj20o40da0uz.jpg" class="thumb" alt="Aho Corasick自动机结合DoubleArrayTrie极速多模式匹配" title="Aho Corasick自动机结合DoubleArrayTrie极速多模式匹配"><h3><b>Aho Corasick自动机结合DoubleArrayTrie极速多模式匹配</b></h3><p class="muted">本文使用Double Array Trie实现了一个性能极高的Aho Corasick自动机，应...</p></a></li>	</ul>
+</div>																<div class="title">
+					<h3>
+						最新发布											</h3>
+									</div>
+								<article class="excerpt excerpt-1"><a target="_blank" class="focus" href="http://www.hankcs.com/program/algorithm/programming-contest-series.html"><img src="./resources/images/6cbb8645gw1f4dqb16o0yj21kw1zhaj2.jpg" class="thumb" alt="题解《挑战程序设计竞赛》系列完结" title="题解《挑战程序设计竞赛》系列完结"></a><header><a class="cat" href="http://www.hankcs.com/program/algorithm/">算法<i></i></a> <h2><a target="_blank" href="http://www.hankcs.com/program/algorithm/programming-contest-series.html" title="题解《挑战程序设计竞赛》系列完结-码农场">题解《挑战程序设计竞赛》系列完结</a></h2></header><p class="meta"><time><i class="fa fa-clock-o"></i>2017-02-13</time><span class="author"><i class="fa fa-user"></i>hankcs</span><span class="pv"><i class="fa fa-eye"></i>阅读(140)</span><a class="pc" href="http://www.hankcs.com/program/algorithm/programming-contest-series.html#comments"><i class="fa fa-comments-o"></i>评论(4)</a></p><p class="note">断断续续花了三年时间，终于看完这本书，完成了所有习题。看书有很多种看法，开卷有益是一种，自始至终是另一种。有些题目很难，至今AC数只有数十人。据此估计，完整读完这本书的人应该不超过十这个量级。 读书的动机也有很多种，我既不是运动员，也不为面...</p></article><div class="pagination" style="display: none;"><ul><li class="prev-page"><a href="http://www.hankcs.com/page/4/">上一页</a></li><li><a href="./resources/js/码农场-自然语言处理、机器学习算法.html">1</a></li><li><a href="http://www.hankcs.com/page/2/">2</a></li><li><a href="http://www.hankcs.com/page/3/">3</a></li><li><a href="http://www.hankcs.com/page/4/">4</a></li><li class="active"><span>5</span></li><li><a href="http://www.hankcs.com/page/6/">6</a></li><li><a href="http://www.hankcs.com/page/7/">7</a></li><li><a href="http://www.hankcs.com/page/8/">8</a></li><li><span> ... </span></li><li class="next-page"><a href="http://www.hankcs.com/page/6/">下一页</a></li><li><span>共 75 页</span></li></ul></div>							</div>
+		</div>
+		<aside class="sidebar">
+<div class="widget widget_categories affix-top" style="top: 0px;"><h3>栏目分类</h3><label class="screen-reader-text" for="cat">栏目分类</label><select name="cat" id="cat" class="postform">
+	<option value="-1">选择分类目录</option>
+	<option class="level-0" value="18">ACG&nbsp;&nbsp;(7)</option>
+	<option class="level-1" value="117">&nbsp;&nbsp;&nbsp;游戏&nbsp;&nbsp;(5)</option>
+	<option class="level-0" value="7">Web开发&nbsp;&nbsp;(80)</option>
+	<option class="level-1" value="64">&nbsp;&nbsp;&nbsp;BAE&nbsp;&nbsp;(13)</option>
+	<option class="level-1" value="11">&nbsp;&nbsp;&nbsp;Linux相关&nbsp;&nbsp;(9)</option>
+	<option class="level-1" value="54">&nbsp;&nbsp;&nbsp;Mac OS&nbsp;&nbsp;(1)</option>
+	<option class="level-1" value="27">&nbsp;&nbsp;&nbsp;WordPress&nbsp;&nbsp;(8)</option>
+	<option class="level-1" value="65">&nbsp;&nbsp;&nbsp;Yii&nbsp;&nbsp;(17)</option>
+	<option class="level-1" value="2">&nbsp;&nbsp;&nbsp;主机域名&nbsp;&nbsp;(26)</option>
+	<option class="level-1" value="66">&nbsp;&nbsp;&nbsp;数据库&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="140">信息安全&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="1">其他类别&nbsp;&nbsp;(184)</option>
+	<option class="level-1" value="78">&nbsp;&nbsp;&nbsp;心情&nbsp;&nbsp;(1)</option>
+	<option class="level-1" value="15">&nbsp;&nbsp;&nbsp;旧的博文&nbsp;&nbsp;(170)</option>
+	<option class="level-0" value="87">操作系统&nbsp;&nbsp;(3)</option>
+	<option class="level-1" value="88">&nbsp;&nbsp;&nbsp;Windows&nbsp;&nbsp;(2)</option>
+	<option class="level-0" value="81">数学基礎&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="4">日语教程&nbsp;&nbsp;(115)</option>
+	<option class="level-1" value="96">&nbsp;&nbsp;&nbsp;口译&nbsp;&nbsp;(1)</option>
+	<option class="level-1" value="59">&nbsp;&nbsp;&nbsp;新编日语商务贸易会话&nbsp;&nbsp;(14)</option>
+	<option class="level-1" value="19">&nbsp;&nbsp;&nbsp;新编日语阅读文选&nbsp;&nbsp;(34)</option>
+	<option class="level-2" value="44">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第一册&nbsp;&nbsp;(20)</option>
+	<option class="level-2" value="61">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三册&nbsp;&nbsp;(2)</option>
+	<option class="level-2" value="20">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第二册&nbsp;&nbsp;(10)</option>
+	<option class="level-1" value="46">&nbsp;&nbsp;&nbsp;日语入门&nbsp;&nbsp;(2)</option>
+	<option class="level-1" value="62">&nbsp;&nbsp;&nbsp;日语听力&nbsp;&nbsp;(2)</option>
+	<option class="level-1" value="5">&nbsp;&nbsp;&nbsp;日语综合教程&nbsp;&nbsp;(59)</option>
+	<option class="level-2" value="120">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第七册&nbsp;&nbsp;(14)</option>
+	<option class="level-2" value="50">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第三册&nbsp;&nbsp;(7)</option>
+	<option class="level-2" value="73">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第五册&nbsp;&nbsp;(12)</option>
+	<option class="level-2" value="98">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第六册&nbsp;&nbsp;(13)</option>
+	<option class="level-2" value="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第四册&nbsp;&nbsp;(12)</option>
+	<option class="level-1" value="86">&nbsp;&nbsp;&nbsp;月の珊瑚&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="131">机器学习&nbsp;&nbsp;(34)</option>
+	<option class="level-0" value="16">经济人文&nbsp;&nbsp;(19)</option>
+	<option class="level-1" value="17">&nbsp;&nbsp;&nbsp;国际贸易理论与政策&nbsp;&nbsp;(9)</option>
+	<option class="level-1" value="30">&nbsp;&nbsp;&nbsp;当代世界经济与政治&nbsp;&nbsp;(3)</option>
+	<option class="level-0" value="9">编程开发&nbsp;&nbsp;(554)</option>
+	<option class="level-1" value="8">&nbsp;&nbsp;&nbsp;Android&nbsp;&nbsp;(30)</option>
+	<option class="level-1" value="13">&nbsp;&nbsp;&nbsp;C++&nbsp;&nbsp;(236)</option>
+	<option class="level-1" value="25">&nbsp;&nbsp;&nbsp;Drupal&nbsp;&nbsp;(23)</option>
+	<option class="level-1" value="10">&nbsp;&nbsp;&nbsp;Java&nbsp;&nbsp;(69)</option>
+	<option class="level-1" value="123">&nbsp;&nbsp;&nbsp;Javascript&nbsp;&nbsp;(1)</option>
+	<option class="level-1" value="24">&nbsp;&nbsp;&nbsp;PHP&nbsp;&nbsp;(57)</option>
+	<option class="level-1" value="94">&nbsp;&nbsp;&nbsp;Python&nbsp;&nbsp;(7)</option>
+	<option class="level-1" value="14">&nbsp;&nbsp;&nbsp;汇编逆向&nbsp;&nbsp;(12)</option>
+	<option class="level-1" value="70">&nbsp;&nbsp;&nbsp;算法&nbsp;&nbsp;(235)</option>
+	<option class="level-1" value="121">&nbsp;&nbsp;&nbsp;网络&nbsp;&nbsp;(6)</option>
+	<option class="level-0" value="104">自然语言处理&nbsp;&nbsp;(53)</option>
+	<option class="level-1" value="109">&nbsp;&nbsp;&nbsp;中文分词&nbsp;&nbsp;(10)</option>
+	<option class="level-1" value="128">&nbsp;&nbsp;&nbsp;句法分析&nbsp;&nbsp;(5)</option>
+	<option class="level-1" value="127">&nbsp;&nbsp;&nbsp;命名实体识别&nbsp;&nbsp;(5)</option>
+	<option class="level-1" value="105">&nbsp;&nbsp;&nbsp;语料库&nbsp;&nbsp;(4)</option>
+	<option class="level-0" value="12">软件发布&nbsp;&nbsp;(9)</option>
+</select>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dropdown = document.getElementById( "cat" );
+	function onCatChange() {
+		if ( dropdown.options[ dropdown.selectedIndex ].value > 0 ) {
+			location.href = "http://www.hankcs.com/?cat=" + dropdown.options[ dropdown.selectedIndex ].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+})();
+/* ]]> */
+</script>
+
+</div><div class="widget widget_archive" style="top: 0px;"><h3>文章归档</h3>		<label class="screen-reader-text" for="archives-dropdown-5">文章归档</label>
+		<select id="archives-dropdown-5" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			
+			<option value="">选择月份</option>
+				<option value="http://www.hankcs.com/2017/02/"> 2017年二月 &nbsp;(13)</option>
+	<option value="http://www.hankcs.com/2017/01/"> 2017年一月 &nbsp;(22)</option>
+	<option value="http://www.hankcs.com/2016/12/"> 2016年十二月 &nbsp;(2)</option>
+	<option value="http://www.hankcs.com/2016/11/"> 2016年十一月 &nbsp;(15)</option>
+	<option value="http://www.hankcs.com/2016/10/"> 2016年十月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2016/09/"> 2016年九月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2016/08/"> 2016年八月 &nbsp;(7)</option>
+	<option value="http://www.hankcs.com/2016/07/"> 2016年七月 &nbsp;(1)</option>
+	<option value="http://www.hankcs.com/2016/06/"> 2016年六月 &nbsp;(1)</option>
+	<option value="http://www.hankcs.com/2016/05/"> 2016年五月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2016/04/"> 2016年四月 &nbsp;(2)</option>
+	<option value="http://www.hankcs.com/2016/03/"> 2016年三月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2016/02/"> 2016年二月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2015/12/"> 2015年十二月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2015/11/"> 2015年十一月 &nbsp;(6)</option>
+	<option value="http://www.hankcs.com/2015/10/"> 2015年十月 &nbsp;(4)</option>
+	<option value="http://www.hankcs.com/2015/09/"> 2015年九月 &nbsp;(4)</option>
+	<option value="http://www.hankcs.com/2015/08/"> 2015年八月 &nbsp;(2)</option>
+	<option value="http://www.hankcs.com/2015/07/"> 2015年七月 &nbsp;(6)</option>
+	<option value="http://www.hankcs.com/2015/05/"> 2015年五月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2015/04/"> 2015年四月 &nbsp;(5)</option>
+	<option value="http://www.hankcs.com/2015/03/"> 2015年三月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2015/02/"> 2015年二月 &nbsp;(22)</option>
+	<option value="http://www.hankcs.com/2015/01/"> 2015年一月 &nbsp;(14)</option>
+	<option value="http://www.hankcs.com/2014/12/"> 2014年十二月 &nbsp;(10)</option>
+	<option value="http://www.hankcs.com/2014/11/"> 2014年十一月 &nbsp;(21)</option>
+	<option value="http://www.hankcs.com/2014/10/"> 2014年十月 &nbsp;(14)</option>
+	<option value="http://www.hankcs.com/2014/09/"> 2014年九月 &nbsp;(16)</option>
+	<option value="http://www.hankcs.com/2014/08/"> 2014年八月 &nbsp;(11)</option>
+	<option value="http://www.hankcs.com/2014/07/"> 2014年七月 &nbsp;(6)</option>
+	<option value="http://www.hankcs.com/2014/06/"> 2014年六月 &nbsp;(12)</option>
+	<option value="http://www.hankcs.com/2014/05/"> 2014年五月 &nbsp;(27)</option>
+	<option value="http://www.hankcs.com/2014/04/"> 2014年四月 &nbsp;(39)</option>
+	<option value="http://www.hankcs.com/2014/03/"> 2014年三月 &nbsp;(25)</option>
+	<option value="http://www.hankcs.com/2014/02/"> 2014年二月 &nbsp;(52)</option>
+	<option value="http://www.hankcs.com/2014/01/"> 2014年一月 &nbsp;(28)</option>
+	<option value="http://www.hankcs.com/2013/12/"> 2013年十二月 &nbsp;(29)</option>
+	<option value="http://www.hankcs.com/2013/11/"> 2013年十一月 &nbsp;(21)</option>
+	<option value="http://www.hankcs.com/2013/10/"> 2013年十月 &nbsp;(11)</option>
+	<option value="http://www.hankcs.com/2013/09/"> 2013年九月 &nbsp;(19)</option>
+	<option value="http://www.hankcs.com/2013/08/"> 2013年八月 &nbsp;(22)</option>
+	<option value="http://www.hankcs.com/2013/07/"> 2013年七月 &nbsp;(36)</option>
+	<option value="http://www.hankcs.com/2013/06/"> 2013年六月 &nbsp;(24)</option>
+	<option value="http://www.hankcs.com/2013/05/"> 2013年五月 &nbsp;(36)</option>
+	<option value="http://www.hankcs.com/2013/04/"> 2013年四月 &nbsp;(29)</option>
+	<option value="http://www.hankcs.com/2013/03/"> 2013年三月 &nbsp;(46)</option>
+	<option value="http://www.hankcs.com/2013/02/"> 2013年二月 &nbsp;(5)</option>
+	<option value="http://www.hankcs.com/2012/05/"> 2012年五月 &nbsp;(2)</option>
+	<option value="http://www.hankcs.com/2012/04/"> 2012年四月 &nbsp;(6)</option>
+	<option value="http://www.hankcs.com/2010/12/"> 2010年十二月 &nbsp;(5)</option>
+	<option value="http://www.hankcs.com/2010/11/"> 2010年十一月 &nbsp;(10)</option>
+	<option value="http://www.hankcs.com/2010/10/"> 2010年十月 &nbsp;(13)</option>
+	<option value="http://www.hankcs.com/2010/09/"> 2010年九月 &nbsp;(6)</option>
+	<option value="http://www.hankcs.com/2010/08/"> 2010年八月 &nbsp;(5)</option>
+	<option value="http://www.hankcs.com/2010/07/"> 2010年七月 &nbsp;(3)</option>
+	<option value="http://www.hankcs.com/2010/06/"> 2010年六月 &nbsp;(12)</option>
+	<option value="http://www.hankcs.com/2010/05/"> 2010年五月 &nbsp;(14)</option>
+	<option value="http://www.hankcs.com/2010/04/"> 2010年四月 &nbsp;(8)</option>
+	<option value="http://www.hankcs.com/2010/03/"> 2010年三月 &nbsp;(16)</option>
+	<option value="http://www.hankcs.com/2010/01/"> 2010年一月 &nbsp;(16)</option>
+	<option value="http://www.hankcs.com/2009/12/"> 2009年十二月 &nbsp;(33)</option>
+	<option value="http://www.hankcs.com/2009/11/"> 2009年十一月 &nbsp;(26)</option>
+	<option value="http://www.hankcs.com/2009/09/"> 2009年九月 &nbsp;(2)</option>
+
+		</select>
+		</div><div class="widget widget_ui_tags" style="top: 0px;"><h3>热门标签</h3><div class="d_tags"><a href="http://www.hankcs.com/tag/%e3%80%8a%e6%8c%91%e6%88%98%e7%a8%8b%e5%ba%8f%e8%ae%be%e8%ae%a1%e7%ab%9e%e8%b5%9b%e7%ac%ac2%e7%89%88%e3%80%8b/">《挑战程序设计竞赛(第2版)》 (184)</a><a href="http://www.hankcs.com/tag/%e3%80%8a%e6%97%a5%e8%af%ad%e7%bb%bc%e5%90%88%e6%95%99%e7%a8%8b%e3%80%8b/">《日语综合教程》 (57)</a><a href="http://www.hankcs.com/tag/%e3%80%8a%e6%96%b0%e7%bc%96%e6%97%a5%e8%af%ad%e9%98%85%e8%af%bb%e6%96%87%e9%80%89%e3%80%8b/">《新编日语阅读文选》 (34)</a><a href="http://www.hankcs.com/tag/%e3%80%8a%e6%99%ba%e8%83%bdweb%e7%ae%97%e6%b3%95%e3%80%8b/">《智能Web算法》 (20)</a><a href="http://www.hankcs.com/tag/%e4%b8%ad%e6%96%87%e5%88%86%e8%af%8d/">中文分词 (18)</a><a href="http://www.hankcs.com/tag/wordpress/">WordPress (17)</a><a href="http://www.hankcs.com/tag/lucene/">Lucene (15)</a><a href="http://www.hankcs.com/tag/%e6%96%b0%e7%bc%96%e6%97%a5%e8%af%ad%e5%95%86%e5%8a%a1%e8%b4%b8%e6%98%93%e4%bc%9a%e8%af%9d/">新编日语商务贸易会话 (14)</a><a href="http://www.hankcs.com/tag/%e7%bb%b4%e7%89%b9%e6%af%94%e7%ae%97%e6%b3%95/">维特比算法 (14)</a><a href="http://www.hankcs.com/tag/intellij-idea/">IntelliJ IDEA (13)</a><a href="http://www.hankcs.com/tag/%e3%80%8a%e7%bb%9f%e8%ae%a1%e5%ad%a6%e4%b9%a0%e6%96%b9%e6%b3%95%e3%80%8b/">《统计学习方法》 (12)</a><a href="http://www.hankcs.com/tag/uva/">UVa (11)</a><a href="http://www.hankcs.com/tag/drupal7%e4%b8%93%e4%b8%9a%e5%bc%80%e5%8f%91%e6%8c%87%e5%8d%97-%e7%ac%ac%e4%b8%89%e7%89%88/">Drupal7专业开发指南 第三版 (10)</a><a href="http://www.hankcs.com/tag/%e3%80%8a%e6%8c%91%e6%88%98%e7%bc%96%e7%a8%8b-%e7%a8%8b%e5%ba%8f%e8%ae%be%e8%ae%a1%e7%ab%9e%e8%b5%9b%e8%ae%ad%e7%bb%83%e6%89%8b%e5%86%8c%e3%80%8b/">《挑战编程-程序设计竞赛训练手册》 (10)</a><a href="http://www.hankcs.com/tag/hmm/">HMM (9)</a><a href="http://www.hankcs.com/tag/cs229/">CS229 (8)</a><a href="http://www.hankcs.com/tag/matlab/">matlab (8)</a><a href="http://www.hankcs.com/tag/google-code-jam/">Google code jam (7)</a><a href="http://www.hankcs.com/tag/%e3%80%8ac%e6%a0%87%e5%87%86%e7%a8%8b%e5%ba%8f%e5%ba%93-%e8%87%aa%e4%bf%ae%e6%95%99%e7%a8%8b%e4%b8%8e%e5%8f%82%e8%80%83%e6%89%8b%e5%86%8c%e3%80%8b/">《C++标准程序库—自修教程与参考手册》 (7)</a><a href="http://www.hankcs.com/tag/crf/">CRF (7)</a><a href="http://www.hankcs.com/tag/yii/">Yii (6)</a><a href="http://www.hankcs.com/tag/%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0/">深度学习 (6)</a><a href="http://www.hankcs.com/tag/webrtc/">WebRTC (5)</a><a href="http://www.hankcs.com/tag/cocos2d-x/">Cocos2d-x (5)</a><a href="http://www.hankcs.com/tag/android/">Android (4)</a><a href="http://www.hankcs.com/tag/%e3%80%8a%e7%ae%97%e6%b3%95%e5%af%bc%e8%ae%ba%e3%80%8b/">《算法导论》 (4)</a><a href="http://www.hankcs.com/tag/%e3%80%8alucene%e5%ae%9e%e6%88%98%e7%ac%ac2%e7%89%88%e3%80%8b/">《Lucene实战(第2版)》 (4)</a><a href="http://www.hankcs.com/tag/%e3%80%8amachine-learning-in-action%e3%80%8b/">《Machine Learning in Action》 (4)</a><a href="http://www.hankcs.com/tag/ictclas/">ICTCLAS (4)</a><a href="http://www.hankcs.com/tag/%e6%89%93%e6%b4%9e/">打洞 (3)</a></div></div><div class="widget ds-widget-recent-comments"><h3>最新评论</h3><ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-avatar-size="30" data-excerpt-length="70" id="ds-recent-comments"><li class="ds-comment ds-show-avatars" data-post-id="6394571657754706690"><div class="ds-avatar"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78" onclick="this.href=&#39;http://hankcs.duoshuo.com/user-url/?user_id=6394185112208016130&#39;;" title="hangxing78"><img src="./resources/images/600a7892jw1e8qgp5bmzyj2050050aa8.jpg" alt="hangxing78" style="width:30px;height:30px"></a></div><div class="ds-meta"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78">hangxing78</a><span class="ds-time" datetime="2017-03-07T10:03:54+08:00" title="2017年3月7日 上午10:03:54">23小时前</span></div><div class="ds-thread-title">在 <a href="http://www.hankcs.com/about#comments">关于</a> 中评论</div><div class="ds-excerpt">博主有开QQ群吗？或者有粉丝开了QQ群？</div></li><li class="ds-comment ds-show-avatars" data-post-id="6394563325207773954"><div class="ds-avatar"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78" onclick="this.href=&#39;http://hankcs.duoshuo.com/user-url/?user_id=6394185112208016130&#39;;" title="hangxing78"><img src="./resources/images/600a7892jw1e8qgp5bmzyj2050050aa8.jpg" alt="hangxing78" style="width:30px;height:30px"></a></div><div class="ds-meta"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78">hangxing78</a><span class="ds-time" datetime="2017-03-07T09:31:34+08:00" title="2017年3月7日 上午9:31:34">24小时前</span></div><div class="ds-thread-title">在 <a href="http://www.hankcs.com/about#comments">关于</a> 中评论</div><div class="ds-excerpt">用的是最短路径</div></li><li class="ds-comment ds-show-avatars" data-post-id="6394563232324911874"><div class="ds-avatar"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78" onclick="this.href=&#39;http://hankcs.duoshuo.com/user-url/?user_id=6394185112208016130&#39;;" title="hangxing78"><img src="./resources/images/600a7892jw1e8qgp5bmzyj2050050aa8.jpg" alt="hangxing78" style="width:30px;height:30px"></a></div><div class="ds-meta"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78">hangxing78</a><span class="ds-time" datetime="2017-03-07T09:31:13+08:00" title="2017年3月7日 上午9:31:13">24小时前</span></div><div class="ds-thread-title">在 <a href="http://www.hankcs.com/about#comments">关于</a> 中评论</div><div class="ds-excerpt">请问，如何解决“长春市长春节致辞”被分成“长春市, 长, 春节, 致辞”的问题</div></li><li class="ds-comment ds-show-avatars" data-post-id="6394292607895208706"><div class="ds-avatar"><a rel="nofollow author" target="_blank" href="http://weibo.com/3616895903" onclick="this.href=&#39;http://hankcs.duoshuo.com/user-url/?user_id=6394289738664116994&#39;;" title="YSCRAZY"><img src="./resources/images/d795739fjw8eqlitw19rkj218g0xcgq6.jpg" alt="YSCRAZY" style="width:30px;height:30px"></a></div><div class="ds-meta"><a rel="nofollow author" target="_blank" href="http://weibo.com/3616895903">YSCRAZY</a><span class="ds-time" datetime="2017-03-06T16:01:03+08:00" title="2017年3月6日 下午4:01:03">3月6日</span></div><div class="ds-thread-title">在 <a href="http://www.hankcs.com/ml/em-algorithm-and-its-generalization.html#comments">EM算法及其推广</a> 中评论</div><div class="ds-excerpt">关于公式L(θ)-L(θ(i))的推导，感觉应当先进行两个log的合并，再使用Jense不等式变换，这样更容易看懂，明白</div></li><li class="ds-comment ds-show-avatars" data-post-id="6394185532900901634"><div class="ds-avatar"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78" onclick="this.href=&#39;http://hankcs.duoshuo.com/user-url/?user_id=6394185112208016130&#39;;" title="hangxing78"><img src="./resources/images/600a7892jw1e8qgp5bmzyj2050050aa8.jpg" alt="hangxing78" style="width:30px;height:30px"></a></div><div class="ds-meta"><a rel="nofollow author" target="_blank" href="http://weibo.com/hangxing78">hangxing78</a><span class="ds-time" datetime="2017-03-06T09:05:33+08:00" title="2017年3月6日 上午9:05:33">3月6日</span></div><div class="ds-thread-title">在 <a href="http://www.hankcs.com/about#comments">关于</a> 中评论</div><div class="ds-excerpt">你好，没有日期与时间的识别，有打算加上去吗？</div></li></ul></div><script>
+if (typeof DUOSHUO !== 'undefined')
+	DUOSHUO.RecentComments && DUOSHUO.RecentComments('.ds-recent-comments');
+</script><div class="widget widget_text"><h3>订阅关注</h3>			<div class="textwidget"><iframe width="100%" height="550" class="share_self" frameborder="0" scrolling="no" src="./resources/html/index.html"></iframe></div>
+		</div><div class="widget widget_ui_statistics"><h3>网站统计</h3><ul><li><strong>日志总数：</strong>866</li><li><strong>评论总数：</strong>2505</li><li><strong>标签总数：</strong>51</li><li><strong>页面总数：</strong>5</li><li><strong>分类总数：</strong>57</li><li><strong>链接总数：</strong>3</li></ul></div><div class="widget widget_meta"><h3>管理站点</h3>			<ul>
+						<li><a href="http://www.hankcs.com/wp-login.php">登录</a></li>
+			<li><a href="http://www.hankcs.com/feed/">文章<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://www.hankcs.com/comments/feed/">评论<abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://cn.wordpress.org/" title="基于WordPress，一个优美、先进的个人信息发布平台。">WordPress.org</a></li>			</ul>
+			</div></aside>	</section>
+<div class="branding branding-black">
+	<div class="container">
+		<h2>我的开源项目</h2>
+		<a target="blank" class="btn btn-lg" href="https://github.com/hankcs/HanLP">HanLP自然语言处理包</a><a target="blank" class="btn btn-lg" href="https://github.com/hankcs/AhoCorasickDoubleArrayTrie">基于DoubleArrayTrie的Aho Corasick自动机</a>	</div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<div class="fcode">
+					</div>
+		<p>© 2017 <a href="./resources/js/码农场-自然语言处理、机器学习算法.html">码农场</a> &nbsp; <a href="http://www.hankcs.com/sitemap.xml">网站地图</a> &nbsp; <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备14002007号-1</a></p>
+		<div style="display:none">
+<script language="javascript" type="text/javascript" src="./resources/js/trace.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47205472-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</div>	</div>
+</footer>
+
+<script>
+window.jsui={
+    www: 'http://www.hankcs.com',
+    uri: 'http://www.hankcs.com/wp-content/themes/dux',
+    ver: '1.3',
+	roll: ["1","2","3"],
+    ajaxpager: '500',
+    url_rp: 'http://www.hankcs.com/about/'
+};
+</script>
+<script type="text/javascript" src="./resources/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./resources/js/loader.js"></script>
+<script type="text/javascript" src="./resources/js/wp-embed.min.js"></script>
+
+    <div class="m-mask"></div>    <div class="rollbar" style="display: none;"><ul><li><a href="javascript:(scrollTo());"><i class="fa fa-angle-up"></i></a><h6>去顶部<i></i></h6></li></ul></div><ul class="m-navbar">
+			<li id="menu-item-1834" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1834"><a href="http://www.hankcs.com/program/cpp/">C++</a></li>
+<li id="menu-item-1835" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1835"><a href="http://www.hankcs.com/program/java/">Java</a></li>
+<li id="menu-item-5754" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5754"><a href="http://www.hankcs.com/ml/">机器学习</a></li>
+<li id="menu-item-2954" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2954"><a href="http://www.hankcs.com/nlp/">NLP</a>
+<ul class="sub-menu">
+	<li id="menu-item-4344" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4344"><a href="http://www.hankcs.com/nlp/corpus/">语料库</a></li>
+	<li id="menu-item-4342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4342"><a href="http://www.hankcs.com/nlp/segment/">中文分词</a></li>
+	<li id="menu-item-4343" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4343"><a href="http://www.hankcs.com/nlp/ner/">命名实体识别</a></li>
+	<li id="menu-item-4479" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4479"><a href="http://www.hankcs.com/nlp/parsing/">句法分析</a></li>
+</ul>
+</li>
+<li id="menu-item-1837" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1837"><a href="http://www.hankcs.com/program/algorithm/">算法</a></li>
+<li id="menu-item-1839" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1839"><a href="http://www.hankcs.com/software/">软件</a></li>
+<li id="menu-item-1838" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1838"><a href="http://www.hankcs.com/nihongonote/">日语</a>
+<ul class="sub-menu">
+	<li id="menu-item-1860" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1860"><a href="http://www.hankcs.com/nihongonote/riyurimen/">日语入门</a></li>
+	<li id="menu-item-1861" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1861"><a href="http://www.hankcs.com/nihongonote/listening/">日语听力</a></li>
+	<li id="menu-item-1863" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1863"><a href="http://www.hankcs.com/nihongonote/tekusuto/">日语综合教程</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2190" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2190"><a href="http://www.hankcs.com/nihongonote/tekusuto/disance/">第三册</a></li>
+		<li id="menu-item-2192" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2192"><a href="http://www.hankcs.com/nihongonote/tekusuto/daiyonnsatu/">第四册</a></li>
+		<li id="menu-item-2191" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2191"><a href="http://www.hankcs.com/nihongonote/tekusuto/5/">第五册</a></li>
+		<li id="menu-item-2702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2702"><a href="http://www.hankcs.com/nihongonote/tekusuto/%e7%ac%ac%e5%85%ad%e5%86%8c/">第六册</a></li>
+		<li id="menu-item-3604" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3604"><a href="http://www.hankcs.com/nihongonote/tekusuto/%e7%ac%ac%e4%b8%83%e5%86%8c/">第七册</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1859" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1859"><a href="http://www.hankcs.com/nihongonote/fd2/">新编日语阅读文选</a>
+	<ul class="sub-menu">
+		<li id="menu-item-2187" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2187"><a href="http://www.hankcs.com/nihongonote/fd2/c1/">第一册</a></li>
+		<li id="menu-item-2189" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2189"><a href="http://www.hankcs.com/nihongonote/fd2/c2/">第二册</a></li>
+		<li id="menu-item-2188" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2188"><a href="http://www.hankcs.com/nihongonote/fd2/c3/">第三册</a></li>
+	</ul>
+</li>
+	<li id="menu-item-1858" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1858"><a href="http://www.hankcs.com/nihongonote/jpkaiwa/">日语商务贸易会话</a></li>
+</ul>
+</li>
+<li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="http://www.hankcs.com/about/">关于</a></li>
+							<li class="navto-search"><a href="javascript:;" class="search-show active"><i class="fa fa-search"></i></a></li>
+					</ul>			<div class="sign">			    <div class="sign-mask"></div>			    <div class="container">			        <a href="http://www.hankcs.com/#" class="close-link signclose-loader"><i class="fa fa-close"></i></a>			        <div class="sign-tips"></div>			        <form id="sign-in">  			            <h3><small class="signup-loader">切换注册</small>登录</h3>			            <h6>			                <label for="inputEmail">用户名或邮箱</label>			                <input type="text" name="username" class="form-control" id="inputEmail" placeholder="用户名或邮箱">			            </h6>			            <h6>			                <label for="inputPassword">密码</label>			                <input type="password" name="password" class="form-control" id="inputPassword" placeholder="登录密码">			            </h6>			            <div class="sign-submit">			                <input type="button" class="btn btn-primary signsubmit-loader" name="submit" value="登录">  			                <input type="hidden" name="action" value="signin">			                <label><input type="checkbox" checked="checked" name="remember" value="forever">记住我</label>			            </div><div class="sign-info"><a href="http://www.hankcs.com/about/">找回密码？</a></div></form>			        <form id="sign-up"> 			            <h3><small class="signin-loader">切换登录</small>注册</h3>			            <h6>			                <label for="inputName">昵称</label>			                <input type="text" name="name" class="form-control" id="inputName" placeholder="设置昵称">			            </h6>			            <h6>			                <label for="inputEmail">邮箱</label>			                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="邮箱">			            </h6>			            <div class="sign-submit">			                <input type="button" class="btn btn-primary btn-block signsubmit-loader" name="submit" value="快速注册">  			                <input type="hidden" name="action" value="signup">  			            </div>			        </form>			    </div>			</div>		</body></html>
